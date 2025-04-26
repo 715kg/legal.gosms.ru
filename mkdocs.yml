@@ -58,8 +58,8 @@ extra:
 
 nav:
   - Документы:
-    - Публичная оферта: index.md
-    - Пользовательское соглашение на использование сервиса: legal/soglasie-users.md
+    - Публичная оферта: legal/public-oferta.md
+    - Пользовательское соглашение на использование сервисов GoSMS: legal/soglasie-users.md
     - Пользовательское соглашение на использование приложения GoSMS Client: legal/soglasie-gosms-client.md
     - Политика конфиденциальности: legal/politika-konfidencialnosti.md
     - Политика использования файлов cookie: legal/cookie-policy.md
