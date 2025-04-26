@@ -1,0 +1,106 @@
+site_name: LEGAL GoSMS.ru
+site_description: Юридические документы сервиса GoSMS
+site_author: Александр Ульянов
+site_url: https://gosms.ru
+copyright: Все права защищены © GoSMS.ru
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: ru
+  logo: https://gosms.ru/assets/images/gosms/gosms-logo1.svg
+  favicon: https://gosms.ru/assets/images/gosms/gosms-logo1.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - toc.follow
+    - content.action.print
+  toc_depth: 3
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+  icon:
+    admonition:
+      note: material/web
+  extra_javascript:
+    - javascripts/print.js
+  extra_css:
+    - stylesheets/print.css
+    - stylesheets/extra.css
+
+plugins:
+  - search
+
+extra:
+  alternate:
+    - name: Русский
+      link: /
+      lang: ru
+  generator: false
+  social:
+    - icon: fontawesome/brands/vk
+      link: https://vk.ru/gosms_ru
+      name: GoSMS в VK
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/gosms_ru
+      name: GoSMS в Telegram
+
+nav:
+  - Документы:
+    - Публичная оферта: index.md
+    - Пользовательское соглашение на использование сервиса: legal/soglasie-users.md
+    - Пользовательское соглашение на использование приложения GoSMS Client: legal/soglasie-gosms-client.md
+    - Политика конфиденциальности: legal/politika-konfidencialnosti.md
+    - Политика использования файлов cookie: legal/cookie-policy.md
+    - Согласие на обработку персональных данных: legal/soglasie-na-ob-pers-dan.md
+    - Согласие на рекламную рассылку: legal/soglasie-reklama.md
+    #- Тарифная политика: legal/tarifnaya-politika.md
+    - Политика антиспама: legal/politika-antispama.md
+    - Инструкция по безопасности: legal/instrukciya-bezopasnosti.md
+    #- Политика записи телефонных разговоров: legal/recording-policy.md
+  - Полезные ссылки:
+    - Главный сайт: https://gosms.ru
+    - CMS Панель управления: http://cms.gosms.ru
+    - Приложение GoSMS (RUSTOR): https://www.rustore.ru/catalog/app/ru.gosms.app
+    - Приложение GoSMS (APK): https://apk.gosms.ru
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+      toc_depth: 3
+      baselevel: 1
+      separator: "_"
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde 
