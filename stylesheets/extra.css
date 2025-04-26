@@ -1,0 +1,19 @@
+/* Стили для разделителя в навигации */
+.md-nav__item--section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-nav__item--section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Стили для заголовков разделов */
+.md-nav__title {
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+    margin-top: 1rem;
+} 
