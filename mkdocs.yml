@@ -43,18 +43,16 @@ plugins:
   - search
 
 extra:
-  alternate:
-    - name: Русский
-      link: /
-      lang: ru
-  generator: false
-  social:
-    - icon: fontawesome/brands/vk
-      link: https://vk.ru/gosms_ru
-      name: GoSMS в VK
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/gosms_ru
-      name: GoSMS в Telegram
+  meta:
+    og:type: website
+    og:title: LEGAL GoSMS.ru - Юридические документы
+    og:description: Юридические документы сервиса GoSMS
+    og:image: https://gosms.ru/assets/images/gosms/gosms-logo1.svg
+    og:url: https://legal.gosms.ru
+    twitter:card: summary_large_image
+    twitter:title: LEGAL GoSMS.ru - Юридические документы
+    twitter:description: Юридические документы сервиса GoSMS
+    twitter:image: https://gosms.ru/assets/images/gosms/gosms-logo1.svg
 
 nav:
   - Документы:
