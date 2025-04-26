@@ -53,6 +53,13 @@ extra:
     twitter:title: LEGAL GoSMS.ru - Юридические документы
     twitter:description: Юридические документы сервиса GoSMS
     twitter:image: https://gosms.ru/assets/images/gosms/gosms-logo1.svg
+  social:
+    - icon: fontawesome/brands/vk
+      link: https://vk.ru/gosms_ru
+      name: GoSMS в VK
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/gosms_ru
+      name: GoSMS в Telegram
 
 nav:
   - Документы:
