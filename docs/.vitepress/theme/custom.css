@@ -1,0 +1,106 @@
+/* GoSMS Brand Colors */
+:root {
+  --vp-c-brand-1: #5C6BC0;
+  --vp-c-brand-2: #3949AB;
+  --vp-c-brand-3: #7986CB;
+  --vp-c-brand-soft: rgba(92, 107, 192, 0.14);
+
+  --vp-button-brand-bg: #5C6BC0;
+  --vp-button-brand-hover-bg: #3949AB;
+  --vp-button-brand-active-bg: #283593;
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-shadow: none;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-active-text: #fff;
+}
+
+/* Nav title — prevent overlap with search */
+.VPNavBarTitle .title {
+  font-size: 0.9rem;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .VPNavBarTitle .title {
+    max-width: 130px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Tables — make them readable */
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+}
+
+.vp-doc table th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--vp-c-divider);
+  font-size: 0.875rem;
+}
+
+.vp-doc table td {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--vp-c-divider);
+  font-size: 0.875rem;
+  vertical-align: top;
+}
+
+.vp-doc table tr:nth-child(even) td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* Document header meta (operator info) */
+.vp-doc p strong:first-child + br {
+  display: block;
+}
+
+/* Footer */
+.VPFooter .message,
+.VPFooter .copyright {
+  font-size: 0.75rem;
+}
+
+/* Sidebar active item */
+.VPSidebarItem.is-active > .item > .VPLink {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* Home features */
+.VPFeature .title {
+  font-size: 1rem;
+}
+
+/* Print styles for legal documents */
+@media print {
+  .VPNav, .VPSidebar, .VPDocFooter, .VPFooter, .VPSocialLinks {
+    display: none !important;
+  }
+
+  .VPContent {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .vp-doc {
+    max-width: 100% !important;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

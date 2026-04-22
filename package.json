@@ -1,0 +1,17 @@
+{
+  "name": "gosms-legal",
+  "version": "1.0.0",
+  "description": "GoSMS Legal Documents Site",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "GoSMS",
+  "license": "UNLICENSED",
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
